@@ -32,8 +32,10 @@ WeatherScope/
  ├── landing.html       # Introductory landing page 
  ├── index.html         # Main weather app interface 
  ├── style.css          # Styling and responsive design 
- ├── script.js          # Weather logic and API integration └── README.md          # Project documentation
- 
+ ├── script.js          # Weather logic and API integration
+  
+ └── README.md          # Project documentation
+
 ```
 ---
 
