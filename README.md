@@ -26,19 +26,24 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 ---
 
 ## 📂 Project Structure
-```WeatherScope/
+
+```
+WeatherScope/
  ├── landing.html       # Introductory landing page 
  ├── index.html         # Main weather app interface 
  ├── style.css          # Styling and responsive design 
  ├── script.js          # Weather logic and API integration └── README.md          # Project documentation
-
+```
 ---
 
 ## 📦 How to Run
 
 1. Clone or download the repository.
+
 ```bash
    git clone https://github.com/Nitesh-Pandit/Weather-app
+   
+```
 2. Open `landing.html` in any modern browser.
 3. Click **Start Exploring** to navigate to the main app.
 4. Enter a city name and click **Get Weather**.
