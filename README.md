@@ -6,13 +6,13 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 
 ## 🚀 Features
 
-- 🔍 **City Search**: Enter any city name to retrieve current weather conditions.
-- 🌡️ **Temperature Display**: Shows temperature in Celsius with an option to toggle to Fahrenheit.
-- 🌤️ **Dynamic Icons**: Weather emojis based on OpenWeather condition codes.
-- 💨 **Extra Indicators**: Humidity, wind speed, and contextual emojis for extreme conditions.
-- ⚠️ **Error Handling**: Friendly messages for invalid input or API issues.
-- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- 🎨 **Modern UI**: Glass-morphism effects, animations, and floating elements.
+-  **City Search**: Enter any city name to retrieve current weather conditions.
+-  **Temperature Display**: Shows temperature in Celsius with an option to toggle to Fahrenheit.
+-  **Dynamic Icons**: Weather emojis based on OpenWeather condition codes.
+-  **Extra Indicators**: Humidity, wind speed, and contextual emojis for extreme conditions.
+-  **Error Handling**: Friendly messages for invalid input or API issues.
+-  **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+-  **Modern UI**: Glass-morphism effects, animations, and floating elements.
 
 ---
 
@@ -42,11 +42,11 @@ WeatherScope/ ├── landing.html       # Introductory landing page ├──
 
 ## 🧪 Testing Checklist
 
-- ✅ City input and weather retrieval
-- ✅ Temperature toggle functionality
-- ✅ Responsive layout across devices
-- ✅ Error messages for invalid cities
-- ✅ Accurate weather icons and indicators
+-  City input and weather retrieval
+-  Temperature toggle functionality
+-  Responsive layout across devices
+-  Error messages for invalid cities
+-  Accurate weather icons and indicators
 
 ---
 
@@ -71,10 +71,9 @@ WeatherScope/ ├── landing.html       # Introductory landing page ├──
 
 ## 🧑‍💻 Author
 
-👩‍💻 Nitesh pandit
-📧 Email: (add if you want)
-📍 Project: Dynamic Image Slider
-💻 Technologies: HTML, CSS, JavaScript
+ Nitesh pandit
+ Project: Dynamic Image Slider
+ Technologies: HTML, CSS, JavaScript
 
 ## 🏁 Conclusion
 
