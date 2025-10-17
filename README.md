@@ -33,6 +33,7 @@ WeatherScope/
  ├── index.html         # Main weather app interface 
  ├── style.css          # Styling and responsive design 
  ├── script.js          # Weather logic and API integration └── README.md          # Project documentation
+ 
 ```
 ---
 
@@ -42,7 +43,7 @@ WeatherScope/
 
 ```bash
    git clone https://github.com/Nitesh-Pandit/Weather-app
-   
+
 ```
 2. Open `landing.html` in any modern browser.
 3. Click **Start Exploring** to navigate to the main app.
