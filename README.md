@@ -18,7 +18,7 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 ## 🌍 Live Host
 
 👉 **Check out the live site here:**  
-[https://nitesh-pandit.github.io/Weather-app/](Click Here!)
+[https://nitesh-pandit.github.io/Weather-app/](https://nitesh-pandit.github.io/Weather-app/)
 
 *(Replace with your actual GitHub Pages URL after deployment!)*
 
