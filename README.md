@@ -20,8 +20,6 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 👉 **Check out the live site here:**  
 [https://nitesh-pandit.github.io/Weather-app/](https://nitesh-pandit.github.io/Weather-app/)
 
-*(Replace with your actual GitHub Pages URL after deployment!)*
-
 ---
 
 ## 🖼️ Screenshots
@@ -50,7 +48,7 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 
 ```
 WeatherScope/
-  
+  html
  ├── landing.html       # Introductory landing page 
  ├── index.html         # Main weather app interface 
  css
