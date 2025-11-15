@@ -28,7 +28,7 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 
 ### Landing Page
 
-![alt text](image.png)
+![alt text](image/image.png)
 
 ### Main Weather Interface
 
