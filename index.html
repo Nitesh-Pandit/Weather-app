@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <!-- Link to external CSS file for styling -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation button to return to landing page -->
-  <button class="back-btn" onclick="window.location.href='landing.html'">
-    <span class="back-icon">←</span> Back
-  </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Link to external CSS file for styling -->
 
-  <!-- Main container for weather application -->
-  <div class="container">
-    <!-- App title -->
-    <h1>🌦 Weather App</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <!-- Search section -->
-    <div class="search-box">
-      <!-- City input field -->
-      <input type="text" id="cityInput" placeholder="Enter city name">
-      <!-- Search button -->
-      <button id="searchBtn">Get Weather</button>
+  <body>
+    <!-- Navigation button to return to landing page -->
+
+    <button class="back-btn" onclick="window.location.href='landing.html'">
+      <span class="back-icon">←</span> Back
+    </button>
+
+    <!-- Main container for weather application -->
+
+    <div class="container">
+      <!-- App title -->
+
+      <h1>🌦 Weather App</h1>
+
+      <!-- Search section -->
+
+      <div class="search-box">
+        <!-- City input field -->
+
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+
+        <!-- Search button -->
+
+        <button id="searchBtn">Get Weather</button>
+      </div>
+
+      <!-- Weather information display area -->
+
+      <div class="weather-info" id="weatherInfo">
+        <!-- Includes: temperature, weather icons, humidity, wind speed -->
+      </div>
+
+      <!-- Error message display area -->
+
+      <p id="errorMsg" class="error"></p>
     </div>
 
-    <!-- Weather information display area -->
-    <div class="weather-info" id="weatherInfo">
-      <!-- Dynamic weather content will be inserted here by JavaScript -->
-      <!-- Includes: temperature, weather icons, humidity, wind speed -->
-    </div>
-
-    <!-- Error message display area -->
-    <p id="errorMsg" class="error"></p>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

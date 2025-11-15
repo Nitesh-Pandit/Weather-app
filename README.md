@@ -15,6 +15,28 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 -  **Modern UI**: Glass-morphism effects, animations, and floating elements.
 
 ---
+## 🌍 Live Host
+
+👉 **Check out the live site here:**  
+[https://your-github-username.github.io/WeatherScope/](https://your-github-username.github.io/WeatherScope/)
+
+*(Replace with your actual GitHub Pages URL after deployment!)*
+
+---
+
+## 🖼️ Screenshots
+
+### Landing Page
+
+![Landing Page Screenshot](images/landing-page.png)
+
+### Main Weather Interface
+
+![Main App Screenshot](images/main-interface.png)
+
+*(If you use a `/screenshots` folder, update the path to `/screenshots/landing-page.png`, etc.)*
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -29,9 +51,12 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 
 ```
 WeatherScope/
+  
  ├── landing.html       # Introductory landing page 
  ├── index.html         # Main weather app interface 
+ css
  ├── style.css          # Styling and responsive design 
+ js
  ├── script.js          # Weather logic and API integration
   
  └── README.md          # Project documentation

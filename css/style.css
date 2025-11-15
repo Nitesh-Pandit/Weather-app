@@ -1,17 +1,9 @@
 /*
  * Weather App Styles
- * A modern, responsive design with animations and glass-morphism effects
- * Features:
- * - Animated backgrounds
- * - Floating elements
- * - Glass-like transparency
- * - Responsive design for all screen sizes
  */
 
-/* Import Poppins font family for clean, modern typography */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Reset default styles and set base font */
 * {
   margin: 0;
   padding: 0;
@@ -20,100 +12,174 @@
 }
 
 /* Animation Definitions */
-/* Gradient background animation */
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+
+    opacity: 0;
+
+    transform: scale(0.95);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: scale(1);
+  }
 }
 
 @keyframes slideIn {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
 }
 
-/* Main body styles with full-screen background and centered content */
 body {
-  /* Dark overlay gradient over background image for better readability */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
-  background-size: cover; /* Full coverage of viewport */
+
+  background-size: cover;
+
   background-position: center;
-  background-attachment: fixed; /* Background stays fixed while scrolling */
+
+  background-attachment: fixed;
+
   color: #fff;
-  /* Center content vertically and horizontally */
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   min-height: 100vh;
+
   padding: 20px;
+
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+  overflow-x: hidden;
 }
 
-/* Back button with glass effect and animations */
 .back-btn {
-  position: fixed; /* Stay in place while scrolling */
+  position: fixed;
+
   top: 20px;
+
   left: 20px;
+
+
   display: flex;
+
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+
+  gap: 8px;
+
   padding: 0.8rem 1.5rem;
-  /* Glass effect styling */
+
+
   background: rgba(255, 255, 255, 0.2);
+
   border: 2px solid rgba(255, 255, 255, 0.3);
+
   color: white;
+
   font-size: 1.1rem;
+
   font-weight: 500;
+
   border-radius: 50px;
+
   cursor: pointer;
+
   transition: all 0.3s ease;
+
   backdrop-filter: blur(5px);
+
   animation: fadeIn 0.5s ease-out;
-  z-index: 1000; /* Ensure button stays above other content */
+
+  z-index: 1000;
 }
 
 /* Hover effects for back button */
 .back-btn:hover {
-  background: rgba(255, 255, 255, 0.3); /* Slightly more opaque */
-  transform: translateX(-5px); /* Slide left effect */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add depth */
+  background: rgba(255, 255, 255, 0.3);
+
+  transform: translateX(-5px);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Back button icon styling */
 .back-icon {
+
   font-size: 1.4rem;
+
   line-height: 1;
+
   transition: transform 0.3s ease;
 }
 
-/* Animate icon on button hover */
 .back-btn:hover .back-icon {
-  transform: translateX(-5px); /* Slide icon left */
+  transform: translateX(-5px);
 }
 
 /* Main container with glass-morphism effect */
 .container {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(10px);
+
   padding: 2.5rem;
+
   border-radius: 20px;
+
   text-align: center;
+
   width: 100%;
-  max-width: 550px; /* Limit width on larger screens */
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft glow effect */
-  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+
+  max-width: 550px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   animation: fadeIn 0.8s ease-out;
 }
 
@@ -124,229 +190,409 @@ h1 {
 
 /* Search input container */
 .search-box {
+
   display: flex;
-  gap: 1rem; /* Space between input and button */
+
+  gap: 1rem;
+
   margin-bottom: 2rem;
+
   animation: slideIn 0.6s ease-out;
 }
 
 /* Search input field with glass effect */
 .search-box input {
-  flex: 1; /* Take remaining space */
+  flex: 1;
+
   padding: 1rem 1.5rem;
+
   background: rgba(255, 255, 255, 0.2);
+
   border: 2px solid rgba(255, 255, 255, 0.1);
+
   border-radius: 50px;
+
   font-size: 1rem;
+
   color: white;
-  transition: all 0.3s ease; /* Smooth hover/focus effects */
+
+  transition: all 0.3s ease;
 }
 
 /* Style for placeholder text in search input */
 .search-box input::placeholder {
-  color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* Enhanced focus state for search input */
 .search-box input:focus {
-  outline: none; /* Remove default browser outline */
-  background: rgba(255, 255, 255, 0.25); /* Slightly lighter background */
-  border-color: rgba(255, 255, 255, 0.5); /* More visible border */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glowing effect */
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  border-color: rgba(255, 255, 255, 0.5);
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Search button with glass effect */
 .search-box button {
   padding: 1rem 2rem;
+
   background: rgba(255, 255, 255, 0.2);
+
   border: 2px solid rgba(255, 255, 255, 0.3);
+
+
   color: white;
+
   font-weight: 500;
+
   border-radius: 50px;
+
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth hover transition */
-  backdrop-filter: blur(5px); /* Glass effect */
+
+  transition: all 0.3s ease;
+
+  backdrop-filter: blur(5px);
 }
 
 /* Hover effect for search button */
 .search-box button:hover {
-  background: white; /* Full white background */
-  color: #333; /* Dark text for contrast */
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background: white;
+
+  color: #333;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Weather information section with fade-in animation */
 .weather-info {
-  opacity: 0; /* Start hidden */
-  animation: slideIn 0.8s ease-out forwards; /* Slide and fade in */
-  animation-delay: 0.3s; /* Slight delay for better UX */
+  opacity: 0;
+
+  animation: slideIn 0.8s ease-out forwards;
+
+  animation-delay: 0.3s;
+
 }
 
 /* City name display */
 .city {
+
   font-size: 2.5rem;
+
   font-weight: 600;
+
   margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Enhance readability */
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
   position: relative;
+
   display: inline-block;
 }
 
 /* Decorative underline for city name */
 .city::after {
+
   content: '';
+
   position: absolute;
+
   bottom: -5px;
+
   left: 50%;
+
   width: 50%;
+
   height: 3px;
-  background: rgba(255, 255, 255, 0.5); /* Semi-transparent line */
-  transform: translateX(-50%); /* Center the line */
+
+  background: rgba(255, 255, 255, 0.5);
+
+  transform: translateX(-50%);
+
   border-radius: 2px;
 }
 
 /* Container for weather icon with floating animation */
 .weather-icon-container {
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   gap: 0.5rem;
+
   margin: 1.5rem 0;
-  animation: float 4s ease-in-out infinite; /* Continuous floating effect */
+
+  animation: float 4s ease-in-out infinite;
+
 }
 
 /* Main weather icon sizing */
 .main-weather-icon {
-  font-size: 5rem; /* Large weather icon */
+
+  font-size: 5rem;
+
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+
   animation: float 4s ease-in-out infinite;
 }
 
 .extra-weather-icons {
+
   font-size: 1.8rem;
+
+
   opacity: 0.9;
+
   animation: fadeIn 0.5s ease-out;
 }
 
 .temperature-container {
+
   margin: 1.5rem 0;
+
   animation: float 4s ease-in-out infinite;
 }
 
 /* Temperature display with large, bold text */
 .temp-display {
+
   font-size: 4.5rem;
+
   font-weight: 700;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Enhance readability */
+
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 0.5rem;
 }
 
 /* Temperature unit toggle button with glass effect */
 .temp-toggle {
+
   font-size: 1rem;
+
   padding: 0.4rem 0.8rem;
+
   background: rgba(255, 255, 255, 0.2);
+
   border: 2px solid rgba(255, 255, 255, 0.3);
+
   color: white;
+
   border-radius: 20px;
+
   cursor: pointer;
+
   transition: all 0.3s ease;
-  backdrop-filter: blur(5px); /* Glass effect */
+
+  backdrop-filter: blur(5px);
+
   margin-left: 0.5rem;
-  transform: translateY(-20px); /* Slight upward offset */
+
+  transform: translateY(-20px);
 }
 
 /* Hover effect for temperature toggle */
 .temp-toggle:hover {
-  background: rgba(255, 255, 255, 0.3); /* More opaque background */
-  transform: translateY(-20px) scale(1.1); /* Grow slightly */
+  background: rgba(255, 255, 255, 0.3);
+
+  transform: translateY(-20px) scale(1.1);
+
 }
 
 /* Temperature value with smooth color transition */
 .temp-value {
-  transition: color 0.3s ease; /* Smooth color change */
+
+  transition: color 0.3s ease;
+
 }
 
 /* Temperature unit (°C/°F) styling */
 .temp-unit {
-  font-size: 3rem; /* Slightly smaller than temperature value */
+
+  font-size: 3rem;
+
 }
 
 /* Weather description text styling */
 .description {
+
   font-size: 1.4rem;
+
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9); /* Slightly transparent for hierarchy */
-  text-transform: capitalize; /* Capitalize first letter of each word */
-  font-weight: 500; /* Medium weight for readability */
+
+
+  color: rgba(255, 255, 255, 0.9);
+
+  text-transform: capitalize;
+
+  font-weight: 500;
+
 }
 
 /* Weather details section (humidity, wind, etc.) */
 .details {
+
   display: flex;
+
+
   justify-content: space-around;
+
   margin-top: 2.5rem;
+
   padding: 1.5rem 0;
-  border-top: 2px solid rgba(255, 255, 255, 0.1); /* Separator line */
+
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+
   animation: slideIn 1s ease-out forwards;
-  animation-delay: 0.6s; /* Delayed entrance for sequence effect */
+
+  animation-delay: 0.6s;
 }
 
 /* Individual detail cards with glass effect */
 .details div {
+
   position: relative;
+
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+
+  background: rgba(255, 255, 255, 0.1);
+
   border-radius: 15px;
-  backdrop-filter: blur(5px); /* Glass effect */
-  transition: all 0.3s ease; /* Smooth hover transitions */
+
+  backdrop-filter: blur(5px);
+
+  transition: all 0.3s ease;
+
 }
 
 .details div:hover {
+
   transform: translateY(-5px);
+
   background: rgba(255, 255, 255, 0.2);
+
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .error {
-  display: none; /* Hide by default */
+
+  display: none;
+
   margin-top: 1.5rem;
+
   padding: 1rem 1.5rem;
+
   background: rgba(255, 255, 255, 0.1);
+
   border-left: 4px solid rgba(255, 182, 182, 0.7);
+
   border-radius: 10px;
+
   color: rgba(248, 6, 6, 0.998);
+
   font-weight: 500;
+
   backdrop-filter: blur(5px);
+
   animation: slideIn 0.3s ease-out;
+
   font-size: 0.95rem;
 }
 
 .error:not(:empty) {
-  display: block; /* Show only when there's an error message */
+
+  display: block;
+
 }
 
 /* Weather Icons Animation */
 .weather-icon {
+
   font-size: 3rem;
+
   margin: 1rem 0;
+
   animation: float 3s ease-in-out infinite;
+
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-/* Additional Animations for Dynamic Elements */
-@keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+:root {
+
+  --glass-bg: rgba(255, 255, 255, 0.1);
+
+  --glass-border: rgba(255, 255, 255, 0.18);
+
+  --primary-white: #fff;
+
+  --error-red: rgba(248, 6, 6, 0.998);
 }
 
+/* Add focus ring for accessibility */
+button:focus,
+.back-btn:focus {
+
+  outline: 3px solid #35d8ff;
+
+  outline-offset: 2px;
+
+}
+
+/* Improve container padding for small screens */
+@media (max-width: 350px) {
+
+  .container {
+
+    padding: 0.8rem;
+
+  }
+
+}
+
+
+/* Additional Animations for Dynamic Elements */
+@keyframes scaleIn {
+
+  from {
+
+    transform: scale(0.8);
+
+    opacity: 0;
+
+  }
+
+
+  to {
+
+    transform: scale(1);
+
+    opacity: 1;
+
+  }
+}
+
+
 @keyframes shimmer {
-  0% { background-position: -100% 0; }
-  100% { background-position: 100% 0; }
+  0% {
+    background-position: -100% 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 /* Loading State */
@@ -356,18 +602,24 @@ h1 {
 }
 
 .loading::after {
+
   content: '';
+
   position: absolute;
+
   top: 0;
+
   right: 0;
+
   bottom: 0;
+
   left: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%);
+
   animation: shimmer 1.5s infinite;
 }
 
@@ -376,84 +628,128 @@ h1 {
 /* ============================= */
 
 /* Tablets (<= 1024px) */
+
 @media (max-width: 1024px) {
   .container {
+
     max-width: 90%;
+
     padding: 2rem;
+
   }
 
   h1 {
+
     font-size: 2rem;
+
   }
 
   .search-box {
+
     flex-direction: column;
+
     gap: 0.8rem;
+
   }
 
   .search-box input {
+
     width: 100%;
+
     font-size: 1rem;
+
   }
 
   .search-box button {
+
     width: 100%;
+
     font-size: 1rem;
+
   }
 
   .temp-display {
+
     font-size: 3.5rem;
+
   }
 
   .temp-toggle {
+
     font-size: 0.9rem;
+
     transform: translateY(-10px);
+
   }
 }
 
 /* Mobile Devices (<= 768px) */
 @media (max-width: 768px) {
   .container {
+
     max-width: 95%;
+
     padding: 1.5rem;
+
   }
 
   h1 {
+
     font-size: 1.8rem;
+
   }
 
   .search-box {
+
     flex-direction: column;
+
     gap: 0.6rem;
+
   }
 
   .search-box input,
   .search-box button {
+
     font-size: 0.9rem;
+
     padding: 0.8rem 1.2rem;
+
   }
 
   .main-weather-icon {
+
     font-size: 4rem;
+
   }
 
   .extra-weather-icons {
+
     font-size: 1.4rem;
+
   }
 
   .temp-display {
+
     font-size: 3rem;
+
   }
 
   .temp-unit {
+
     font-size: 2rem;
+
   }
 
   .temp-toggle {
+
     font-size: 0.8rem;
+
     margin-left: 0.3rem;
+
     transform: translateY(-8px);
+
   }
+
 
   .details {
     flex-direction: column;
@@ -462,50 +758,76 @@ h1 {
 }
 
 /* Small Mobile Devices (<= 480px) */
+
 @media (max-width: 480px) {
+
   body {
+
     padding: 10px;
+
   }
 
   .container {
     padding: 3rem;
+
     border-radius: 15px;
+
   }
 
   h1 {
+
     font-size: 1.8rem;
+
   }
 
   .search-box input,
   .search-box button {
+
     font-size: 1rem;
+
     padding: 1rem 1rem;
+
   }
 
   .main-weather-icon {
+
     font-size: 3rem;
+
   }
 
   .extra-weather-icons {
+
     font-size: 1.2rem;
+
   }
 
   .temp-display {
+
     font-size: 2.2rem;
+
   }
 
   .temp-unit {
+
     font-size: 1.5rem;
+
   }
 
   .temp-toggle {
+
     font-size: 0.75rem;
+
     transform: translateY(-5px);
+
   }
 
   .back-btn {
+
     padding: 0.6rem 1rem;
+
     font-size: 0.9rem;
+
     gap: 5px;
+
   }
 }
