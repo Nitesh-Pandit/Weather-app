@@ -28,13 +28,12 @@ Welcome to **WeatherScope**, a sleek and responsive weather application that del
 
 ### Landing Page
 
-![Landing Page Screenshot](images/landing-page.png)
+![alt text](image.png)
 
 ### Main Weather Interface
 
-![Main App Screenshot](images/main-interface.png)
-
-*(If you use a `/screenshots` folder, update the path to `/screenshots/landing-page.png`, etc.)*
+![alt text](image/image-1.png)
+![alt text](image/image-2.png)
 
 ---
 
@@ -58,7 +57,11 @@ WeatherScope/
  ├── style.css          # Styling and responsive design 
  js
  ├── script.js          # Weather logic and API integration
-  
+ image
+ ├── image-1.png
+ ├── image-2.png
+ ├── image.png
+
  └── README.md          # Project documentation
 
 ```
